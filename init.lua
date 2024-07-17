@@ -1,6 +1,6 @@
 -- Load all config files
 
-require('lua.config.options')
-require('lua.config.keymaps')
-require('lua.config.lazy')
-require('lua.config.colours')  -- Theme at the end, to prevent overwrite by other plugins
+require('config.options')
+require('config.keymaps')
+require('config.lazy')
+require('config.colours')  -- Theme at the end, to prevent overwrite by other plugins
