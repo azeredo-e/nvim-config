@@ -1,6 +1,6 @@
 local mason_lspconfig = require("mason-lspconfig")
 local lspconfig = require("lspconfig")
-local common_on_attach = require("lua.config.utils").common_on_attach
+local common_on_attach = require("config.utils").common_on_attach
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 -- capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
