@@ -86,10 +86,31 @@ local plugins = {
         end
     },
 
+    -- Autocomplete
+    {"hrsh7th/nvim-cmp", -- This one manages all cmp plugins, check the github for configurations
+        event = "InsertEnter",
+        -- Sources for nvim-cmp
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp", -- This one makes the lsp work
+            -- "hrsh7th/cmp-nvim-lsp-signature-help", -- This one is for signatures, later i check if this one is better than the one by ray-x
+            "hrsh7th/cmp-buffer", -- Don't get it, but will leave it
+            "hrsh7th/cmp-path", -- This one is for paths
+            "hrsh7th/cmp-nvim-lua", -- apparently this one is specific for nvim lua
+            "hrsh7th/cmp-cmdline", -- for the shell
+            "saadparwaiz1/cmp_luasnip", -- No idea but will leave it as is
+        },
+        config = function()
+            require('plugins.cmp')
+        end,
+    },
+
     -- Signature help
     {"ray-x/lsp_signature.nvim",
         config = function()
-            require("lsp_signature").setup()
+            local cfg = {
+                toggle_key = "<leader>S" 
+            }
+            require("lsp_signature").setup(cfg)
         end
     },
 

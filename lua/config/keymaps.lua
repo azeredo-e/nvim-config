@@ -48,3 +48,8 @@ nnoremap("<leader>u", ":UndotreeToggle")
 -- Vim-commentary
 -- Have to configure this later
 
+-- Signature (configured on lazy.lua)
+-- <leader>S -> Open/closes signature
+
+-- LSP (configured in plugins/lsp.lua)
+--
