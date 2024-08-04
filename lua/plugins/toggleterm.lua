@@ -7,4 +7,5 @@ require("toggleterm").setup{
         end
     end,
     open_mapping = [[<c-t>]],
+    shell = "powershell"
 }

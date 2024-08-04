@@ -6,6 +6,12 @@ I've written thie README as a way to keep track of everything that comes in maki
 
 This config was heavily inspired by [miltonllera/nvim-config](https://github.com/miltonllera/neovim-config/tree/master).
 
+## Fonts
+
+Before using this thing you need to make sure that the installed font on the terminal is a compatible nerd font.
+
+I'm using [this one](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFontMono-Regular.ttf) JetBrains Mono
+
 ## Installed plugins
 
 - [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
