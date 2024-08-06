@@ -6,11 +6,40 @@ I've written thie README as a way to keep track of everything that comes in maki
 
 This config was heavily inspired by [miltonllera/nvim-config](https://github.com/miltonllera/neovim-config/tree/master).
 
-## Fonts
+## Requirements
+
+### Compilers and interpreters
+
+Treesitter and some other plugins don't work whithout a C compiler. Use gcc with MinGW. Download is avaliable [here](https://sourceforge.net/projects/mingw/)
+
+---
+
+Node is also needed. You can use:
+
+```poweshell
+# installs fnm (Fast Node Manager)
+winget install Schniz.fnm
+
+```
+
+If it errors, just run the command that errored again, maybe PS haven't updated the registry yet and hadn't found the command.
+
+After that include this lines at the end of the profile.ps1 file.
+
+```powershell
+# configure fnm environment
+fnm env --use-on-cd | Out-String | Invoke-Expression
+
+# download and install Node.js
+fnm use --install-if-missing 22
+```
+
+### Fonts
 
 Before using this thing you need to make sure that the installed font on the terminal is a compatible nerd font.
 
 I'm using [this one](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFontMono-Regular.ttf) JetBrains Mono
+
 
 ## Installed plugins
 
